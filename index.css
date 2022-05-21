@@ -1,0 +1,111 @@
+  /* creating main display page  */
+  
+  .parent {
+      background-color: rgb(75, 167, 204);
+      border: 4px solid rgb(165, 158, 158);
+      border-style: double;
+      box-shadow: 0px 2px 0px 5px rgb(130, 158, 172);
+      width: 300px;
+      height: 430px;
+      color: aliceblue;
+      margin-left: 400px;
+      text-align: center;
+      padding: 30px;
+      border-radius: 30px;
+      margin-top: 40px;
+  }
+  /* changing the properties of text display in the StopWatch */
+  
+  p {
+      color: rgb(26, 6, 6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+  }
+  /* changing the button */
+  
+  .button {
+      font-size: 20px;
+      border-radius: 15px;
+      margin-top: 10px;
+      width: 200px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 5px solid green;
+  }
+  
+  button:hover {
+      box-shadow: 0px 3px 5px 5px rgb(206, 198, 198);
+  }
+  
+  .resetState {
+      font-size: 30px;
+      background-color: rgb(54, 186, 190);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: black;
+      box-shadow: 0px 3px 5px 5px rgb(31, 126, 155);
+      margin-top: 10px;
+  }
+  
+  .stopwatch-icon {
+      display: flex;
+      color: white;
+      width: 230px;
+      background-color: rgb(49, 192, 192);
+      border-radius: 5px;
+      box-shadow: 0px 3px 5px 5px rgb(31, 126, 155);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .icon {
+      width: 40px;
+      height: 50px;
+  }
+  
+  #start {
+      border-radius: 8px;
+      background-color: rgb(151, 226, 151);
+  }
+  
+  #stop {
+      border-radius: 8px;
+      background-color: rgb(157, 187, 99);
+  }
+  
+  #reset {
+      border-radius: 8px;
+      background-color: rgb(197, 123, 123);
+  }
+  /* On screens that are 480px wide or less, the background color is blue */
+  
+  @media screen and (min-width: 480px) {
+      .parent {
+          margin-left: 400px;
+      }
+  }
+  /* On screens that are 992px wide or less, the background color is blue */
+  
+  @media screen and (max-width: 992px) {
+      .parent {
+          background-color: rgb(150, 165, 146);
+          color: white;
+          margin-left: 270px;
+      }
+  }
+  /* On screens that are 600px wide or less, the background color is olive */
+  
+  @media screen and (max-width: 600px) {
+      .parent {
+          background-color: rgb(100, 171, 173);
+          color: white;
+          margin-left: 150px;
+      }
+  }
